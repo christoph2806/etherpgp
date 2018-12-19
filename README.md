@@ -34,15 +34,15 @@ address. The signing is done by Metamask so the dApp never has to handle the pri
 The public key is then derived from the private key with openpgp.js and stored in a very simple 
 [9-line-smart contract](https://etherscan.io/address/0xa6a52efd0e0387756bc0ef10a34dd723ac408a30#code) in a 
 `mapping (address => string)` mapping.  
-The nice thing is that you don't need to backup you private key because for decryption it is always *ad-hoc*
-generated from the ethereum address by signing the same special message with Metamask. 
+The nice thing is that you don't need to backup you private key because for decryption it is always 
+generated *on the fly* from the ethereum address by signing the same special message with Metamask. 
 
 1. For **encryption**, we simply use the public key which is read from the smart contract and encrypt the
 message with openpgp.js. 
 The encrypted message can then be send by any channel you like. 
 Be aware that not all messenger applications preserve the message in a way that it can be decrypted afterwards.
 
-1. For **decryption**, we derive the private key *on-the-fly* by signing the special message with Metamask.
+1. For **decryption**, we derive the private key *on the fly* by signing the special message with Metamask.
 With the private key we can then decrypt the message.
 
 
