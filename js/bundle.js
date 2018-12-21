@@ -71,12 +71,12 @@ etherpgp = new function () {
         this.pgpContract =
             ethereum.networkVersion === "1"
                 ? new ethers.Contract(
-                '0xa6a52efd0e0387756bc0ef10a34dd723ac408a30',
+                '0xac92e7b793931908c3959c4f5af9b0161fa6f325',
                 pgpABI,
                 this.provider,
                 )
                 : new ethers.Contract(
-                '0x9d7efd45e45c575cafb25d49d43556f43ebe3456',
+                '',
                 pgpABI,
                 this.provider,
                 );
@@ -203,14 +203,18 @@ module.exports = etherpgp;
 
     $('#btn-encrypt-message').click(async function() {
         const message = $('textarea#message-to-encrypt').val();
-        const encrypted = await etherpgp.encryptMessage(message, etherpgp.account);
+        const recipient_account = $('input#recipient-account').val();
+        const encrypted = await etherpgp.encryptMessage(message, recipient_account);
         $('textarea#pgp-encrypted-message').val(encrypted);
     });
 
 
     $('#btn-decrypt-message').click(async function() {
         const pgp_message = $('textarea#pgp-message-to-decrypt').val();
-        const decrypted = await etherpgp.decryptMessage(pgp_message, etherpgp.account);
+        const decrypted = await etherpgp.decryptMessage(pgp_message, etherpgp.account)
+            .catch(function (reason) {
+                $("p#decrypt-error").text(reason);
+            });
         $('textarea#decrypted-message').val(decrypted);
 
     });

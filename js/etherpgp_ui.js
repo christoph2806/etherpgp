@@ -34,14 +34,18 @@
 
     $('#btn-encrypt-message').click(async function() {
         const message = $('textarea#message-to-encrypt').val();
-        const encrypted = await etherpgp.encryptMessage(message, etherpgp.account);
+        const recipient_account = $('input#recipient-account').val();
+        const encrypted = await etherpgp.encryptMessage(message, recipient_account);
         $('textarea#pgp-encrypted-message').val(encrypted);
     });
 
 
     $('#btn-decrypt-message').click(async function() {
         const pgp_message = $('textarea#pgp-message-to-decrypt').val();
-        const decrypted = await etherpgp.decryptMessage(pgp_message, etherpgp.account);
+        const decrypted = await etherpgp.decryptMessage(pgp_message, etherpgp.account)
+            .catch(function (reason) {
+                $("p#decrypt-error").text(reason);
+            });
         $('textarea#decrypted-message').val(decrypted);
 
     });

@@ -70,12 +70,12 @@ etherpgp = new function () {
         this.pgpContract =
             ethereum.networkVersion === "1"
                 ? new ethers.Contract(
-                '0xa6a52efd0e0387756bc0ef10a34dd723ac408a30',
+                '0xac92e7b793931908c3959c4f5af9b0161fa6f325',
                 pgpABI,
                 this.provider,
                 )
                 : new ethers.Contract(
-                '0x9d7efd45e45c575cafb25d49d43556f43ebe3456',
+                '',
                 pgpABI,
                 this.provider,
                 );
