@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>EtherPGP - a simple static page for encrypting messages with Etherum Addresses and PGP</title>
+    <title>EtherPGP</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,8 @@
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
@@ -24,296 +25,360 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">EtherPGP</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#actions">Try it!</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#actions">Try it!</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container">
+<!-- Header -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container">
         <h1 class="text-uppercase mb-0">EtherPGP</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">A simple single static page to encrypt messages with Ethereum Addresses and PGP</h2>
-      </div>
-    </header>
+        <h2 class="font-weight-light mb-0">A simple single static page to encrypt messages with Ethereum Addresses and
+            PGP</h2>
+    </div>
+</header>
 
-    <!-- Actions Grid Section -->
-    <!-- -->
-    <section class="actions" id="actions">
-      <div class="container">
+<!-- Actions Grid Section -->
+<!-- -->
+<section class="actions" id="actions">
+    <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-5">Actions</h2>
         <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="actions-item d-block mx-auto" href="#actions-modal-1">
-              <div class="actions-item-caption d-none position-absolute h-100 w-100">
-                <div class="actions-item-caption-content my-auto w-100 text-center text-white">
-                  <i>Create Keys</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/actions/key.png" alt="">
-            </a>
-            <h4 class="text-center text-uppercase text-secondary">Create Keys</h4>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="actions-item d-block mx-auto" href="#actions-modal-2">
-              <div class="actions-item-caption d-flex position-absolute h-100 w-100">
-                <div class="actions-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/actions/encrypt.png" alt="">
-            </a>
-            <h4 class="text-center text-uppercase text-secondary">Encrypt</h4>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="actions-item d-block mx-auto" href="#actions-modal-3">
-              <div class="actions-item-caption d-flex position-absolute h-100 w-100">
-                <div class="actions-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/actions/decrypt.png" alt="">
-            </a>
-            <h4 class="text-center text-uppercase text-secondary">Decrypt</h4>
-          </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="actions-item d-block mx-auto" href="#actions-modal-1">
+                    <div class="actions-item-caption d-none position-absolute h-100 w-100">
+                        <div class="actions-item-caption-content my-auto w-100 text-center text-white">
+                            <i>Create Keys</i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/actions/key.png" alt="">
+                </a>
+                <h4 class="text-center text-uppercase text-secondary">Create Keys</h4>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="actions-item d-block mx-auto" href="#actions-modal-2">
+                    <div class="actions-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="actions-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/actions/encrypt.png" alt="">
+                </a>
+                <h4 class="text-center text-uppercase text-secondary">Encrypt</h4>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="actions-item d-block mx-auto" href="#actions-modal-3">
+                    <div class="actions-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="actions-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/actions/decrypt.png" alt="">
+                </a>
+                <h4 class="text-center text-uppercase text-secondary">Decrypt</h4>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- End Action Grid -->
+<!-- End Action Grid -->
 
-    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
+<!-- About Section -->
+<section class="bg-primary text-white mb-0" id="about">
+    <div class="container">
         <h2 class="text-center text-uppercase text-white">About</h2>
         <hr class="star-light mb-5">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">This is just a simple static page served from github.io. No strings attached, use at your own risk.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Using stuff from airswap - Thank you guys!</p>
-          </div>
+            <div class="col-lg-4 ml-auto">
+                <p class="lead">This is just a simple static page served from github.io. No strings attached, use at
+                    your own risk.</p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p class="lead">Using stuff from airswap - Thank you guys!</p>
+            </div>
         </div>
         <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="https://github.com/christoph2806/etherpgp">
-            <i class="fas fa-download mr-2"></i>
-            Clone it now!
-          </a>
+            <a class="btn btn-xl btn-outline-light" href="https://github.com/christoph2806/etherpgp">
+                <i class="fas fa-download mr-2"></i>
+                Clone it now!
+            </a>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
         <hr class="star-dark mb-5">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-              </div>
-            </form>
-          </div>
+            <div class="col-lg-8 mx-auto">
+                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Name</label>
+                            <input class="form-control" id="name" type="text" placeholder="Name" required="required"
+                                   data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Email Address</label>
+                            <input class="form-control" id="email" type="email" placeholder="Email Address"
+                                   required="required"
+                                   data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Phone Number</label>
+                            <input class="form-control" id="phone" type="tel" placeholder="Phone Number"
+                                   required="required"
+                                   data-validation-required-message="Please enter your phone number.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Message"
+                                      required="required"
+                                      data-validation-required-message="Please enter a message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/christoph2806/etherpgp">
-                  <i class="fab fa-fw fa-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/liesdorn">
-                  <i class="fab fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/christoph-mussenbrock/">
-                  <i class="fab fa-fw fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About EtherPGP</h4>
-            <p class="lead mb-0">EtherPGP is open source. Feel free to fork or clone the
-              <a href="https://github.com/christoph2806/etherpgp">Github Repo</a>!</p>
-          </div>
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Location</h4>
+                <p class="lead mb-0">2215 John Daniel Drive
+                    <br>Clark, MO 65243</p>
+            </div>
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Around the Web</h4>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://github.com/christoph2806/etherpgp">
+                            <i class="fab fa-fw fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://twitter.com/liesdorn">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://www.linkedin.com/in/christoph-mussenbrock/">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-uppercase mb-4">About EtherPGP</h4>
+                <p class="lead mb-0">EtherPGP is open source. Feel free to fork or clone the
+                    <a href="https://github.com/christoph2806/etherpgp">Github Repo</a>!</p>
+            </div>
         </div>
-      </div>
-    </footer>
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; Christoph Mussenbrock 2018 - Icons made by Freepik from www.flaticon.com </small>
-      </div>
     </div>
+</footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+<div class="copyright py-4 text-center text-white">
+    <div class="container">
+        <small>Copyright &copy; Christoph Mussenbrock 2018 - Icons made by Freepik from www.flaticon.com</small>
+    </div>
+</div>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
         <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
+    </a>
+</div>
 
-    <!-- Action Modals -->
+<!-- Action Modals -->
 
-    <!-- Action Modal 1 -->
-    <div class="actions-modal mfp-hide" id="actions-modal-1">
-      <div class="actions-modal-dialog bg-white">
+<!-- Action Modal 1 -->
+<div class="actions-modal mfp-hide" id="actions-modal-1">
+    <div class="actions-modal-dialog bg-white">
         <a class="close-button d-none d-md-block actions-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
+            <i class="fa fa-3x fa-times"></i>
         </a>
         <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Create Keys</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/actions/key.png" alt="">
-              <h4 class="text-secondary text-uppercase mb-0">What happens here?</h4>
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill actions-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Back</a>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-secondary text-uppercase mb-0">Create Keys</h2>
+                    <hr class="star-dark mb-5">
+                    <img class="img-fluid w-50 mb-5" src="img/actions/key.png" alt="">
+                    <h4 class="text-secondary text-uppercase mb-0">What happens here?</h4>
+                    <p class="mb-5">
+                        Here you create or retrieve your PGP keypair for later encryption.
+                        The passphrase of your PGP private key is deterministically derived from the private key of your
+                        Ethereum Address. It's simply the 164-bit string which is the result of signing a special
+                        message <i>(I hereby confirm that I am the owner of 0x...)</i> which contains this address.
+                        The signing is done by Metamask and this dApp never stores the
+                        passphrase. The PGP private / public keypair is then derived and encrypted with the passphrase and
+                        stored on IPFS. The IPFS hash is stored in a very simple
+                        <a href="https://etherscan.io/address/0xa6a52efd0e0387756bc0ef10a34dd723ac408a30#code"
+                           target="_blank">9-line-smart contract</a> in a
+                        <code>mapping (address => string)</code> mapping.
+                        The nice thing is that you don't need to backup you private key because for decryption it is
+                        always generated *on the fly* from the ethereum address by signing the same special message with
+                        Metamask.
+                    </p>
+                    <p class="text-danger">The private key displayed below is encrypted with a pseudo-random passphrase which
+                    is derived from your accounts private key. That means that you can safely share or publish it as long
+                    as you keep your accounts private key protected! (Actually it is published on IPFS)</p>
+                    <button id="btn-create-keys" type="button" class="btn btn-warning btn-xl mb-5">Create my keys!</button>
+                    <p id="key-exists" class="text-danger"></p>
+                    <div class="mb-5">
+                        <label>Encrypted Private PGP Key</label>
+                        <textarea readonly class="form-control textarea-autoselect" rows="10" id="display-private-key"></textarea>
+                    </div>
+                    <div class="mb-5">
+                        <label>Public PGP Key</label>
+                        <textarea readonly class="form-control textarea-autoselect" rows="10" id="display-public-key"></textarea>
+                    </div>
+                    <a class="btn btn-primary btn-lg rounded-pill actions-modal-dismiss" href="#">
+                        <i class="fa fa-close"></i>
+                        Back</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Action Modal 2 -->
-    <div class="actions-modal mfp-hide" id="actions-modal-2">
-      <div class="actions-modal-dialog bg-white">
+<!-- Action Modal 2 -->
+<div class="actions-modal mfp-hide" id="actions-modal-2">
+    <div class="actions-modal-dialog bg-white">
         <a class="close-button d-none d-md-block actions-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
+            <i class="fa fa-3x fa-times"></i>
         </a>
         <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Encrypt Message</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/actions/encrypt.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill actions-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Back</a>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-secondary text-uppercase mb-0">Encrypt Message</h2>
+                    <hr class="star-dark mb-5">
+                    <img class="img-fluid w-50 mb-5" src="img/actions/encrypt.png" alt="">
+                    <h4 class="text-secondary text-uppercase mb-0">What happens here?</h4>
+                    <p class="mb-5">explain explain explain like I'm 5</p>
+                    <button id="btn-encrypt-message" type="button" class="btn btn-warning btn-xl mb-5">Encrypt it!</button>
+                    <div class="mb-5">
+                        <label>Message to encrypt:</label>
+                        <textarea class="form-control textarea-autoselect" rows="10" id="message-to-encrypt"></textarea>
+                    </div>
+                    <div class="mb-5">
+                        <label>PGP encrypted message:</label>
+                        <textarea readonly class="form-control textarea-autoselect" rows="10" id="pgp-encrypted-message"></textarea>
+                    </div>
+                    <a class="btn btn-primary btn-lg rounded-pill actions-modal-dismiss" href="#">
+                        <i class="fa fa-close"></i>
+                        Back</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Action Modal 3 -->
-    <div class="actions-modal mfp-hide" id="actions-modal-3">
-      <div class="actions-modal-dialog bg-white">
+<!-- Action Modal 3 -->
+<div class="actions-modal mfp-hide" id="actions-modal-3">
+    <div class="actions-modal-dialog bg-white">
         <a class="close-button d-none d-md-block actions-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
+            <i class="fa fa-3x fa-times"></i>
         </a>
         <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/actions/decrypt.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill actions-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Back</a>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-secondary text-uppercase mb-0">Decrypt Message</h2>
+                    <hr class="star-dark mb-5">
+                    <img class="img-fluid w-50 mb-5" src="img/actions/decrypt.png" alt="">
+                    <h4 class="text-secondary text-uppercase mb-0">What happens here?</h4>
+                    <p class="mb-5">explain explain explain like I'm 5</p>
+                    <button id="btn-decrypt-message" type="button" class="btn btn-warning btn-xl mb-5">Decrypt it!</button>
+                    <div class="mb-5">
+                        <label>Paste encrypted PGP Message here:</label>
+                        <textarea class="form-control textarea-autoselect" rows="10" id="pgp-message-to-decrypt"></textarea>
+                    </div>
+                    <div class="mb-5">
+                        <label>Decrypted message:</label>
+                        <textarea readonly class="form-control textarea-autoselect" rows="10" id="decrypted-message"></textarea>
+                    </div>
+                    <a class="btn btn-primary btn-lg rounded-pill actions-modal-dismiss" href="#">
+                        <i class="fa fa-close"></i>
+                        Back</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/freelancer.min.js"></script>
 
-  </body>
+<!-- etherpgp scripts -->
+<script src="js/bundle.js"></script>
+
+</body>
 
 </html>
